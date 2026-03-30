@@ -19,6 +19,19 @@ This Qlik Sense application provides a comprehensive analysis of sales, inventor
 
 ---
 
+## 🏗️ Data Architecture & Modeling
+
+The project is built on a robust associative data model, ensuring high performance and data integrity across all dimensions.
+
+![Data Model Schema](Screenshots/Data_Model_Schema.png)
+
+### Model Highlights:
+*   **Star Schema Optimization:** Designed to leverage Qlik’s associative engine while avoiding synthetic keys or circular references.
+*   **Fact & Dimension Separation:** Clear architecture separating transactional data (Sales & Returns) from master data (Products, Stores, and Employees).
+*   **Data Integrity:** Implementation of unique keys to ensure accurate aggregations across multi-source tables.
+
+---
+
 ## 🛠️ Technical Highlights
 *   **Dynamic KPIs:** Built with advanced **Set Analysis** to handle YOY comparisons and growth metrics.
 *   **Geospatial Analysis:** Integrated maps to identify regional sales trends and return hot-spots.
